@@ -38,7 +38,7 @@ CHEESESHOP_DIR = "feta" # Sheep milk cheese...
 def is_compressed(filename):
     # Just a quick sanity check by filename.  Good enough.
     return (filename[-3:] == '.gz'
-            or filename[-4:] in ('.tgz', '.zip'))
+            or filename[-4:] in ('.tgz', '.zip', '.whl', '.bz2'))
 
 
 def dispatch():
